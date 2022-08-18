@@ -218,6 +218,19 @@ header a {
    align-items: center;
 }
 
+.step-img {
+   flex: 1 12%;
+   margin-right: 20px;
+}
+
+.step-text {
+   flex: 12;
+}
+
+.step-img img {
+   max-width: 100%
+}
+
 
 /* meet your trainers styling begininning */
 
