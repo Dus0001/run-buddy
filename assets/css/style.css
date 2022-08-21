@@ -17,7 +17,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: url("../images/hero-bg.jpeg");
+    background-image: url("../images/hero-bg.jpg.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -44,7 +44,7 @@ header a {
     margin: 7px 0;
  }
 
- header nav ul li {
+ header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -55,8 +55,15 @@ header a {
  header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: px;
+    font-size: ;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ }
+ 
+ header nav ul li a:hover{
+   background: #fce138;
+   color: #024e76;
+   border-radius: 15px;
+   text-shadow: none;
  }
 
  footer {
@@ -85,7 +92,7 @@ header a {
  
 /* Hero Style Start*/
 .hero {
-   background-image: url("../images/hero-bg.jpeg");
+   background-image: url("../images/hero-bg.jpg.jpeg");
    display: flex;
    background-size: cover;
    background-position: center;
@@ -123,7 +130,14 @@ header a {
    width: 100%;
    margin-bottom: 15px;
    border-bottom: 10px;
+   background-color: rgba(225,225,225, 0.75);
  }
+
+ .form-input:focus {
+   background-color: rgba(225,225,225, 1);
+   outline: none;
+ }
+
  .hero-form label {
    margin: 0 5px;
  }
@@ -143,6 +157,10 @@ header a {
    padding: 10px 20px;
    font-size: 16px;
    border-radius: 10px;
+ }
+
+ .hero-form button:hover {
+   background-color: #39a6b2;
  }
 
  .hero-cta {
@@ -215,11 +233,14 @@ header a {
    margin: 50px auto;
    padding-bottom: 50px;
    width: 80%;
-   border-bottom: 1px solid #39a6b2;
    display: flex;
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-between;
+}
+
+.step:not(:last-child) {
+   border-bottom: 1px solid #39a6b2;
 }
 
 .step-info {
@@ -339,7 +360,7 @@ font-style: normal;
    margin: 15 px;
 }
 
-.Contact-form input, .contact-form textarea {
+.contact-form input, .contact-form textarea {
    border: 1px solid #024e76;
    display: block;
    padding: 7px 15px;
@@ -349,6 +370,11 @@ font-style: normal;
    margin-bottom: 15px;
    margin-top: 5px;
    border-radius: 10px;
+   background-color: rgba(225,225,225, 0.75);
+}
+.contact-form input:focus, .contact-form textarea:focus {
+background-color: rgba(225,225,225, 1);
+outline: none;
 }
 
 .contact-form button {
@@ -360,6 +386,11 @@ font-style: normal;
    padding: 15px 0;
    font-size: 16px;
    border-radius: 10px;
+}
+
+.contact-form button:hover {
+   color: #fce138;
+   background: #39a6b2;
 }
 /* Reach out end */
 .flex-row {
