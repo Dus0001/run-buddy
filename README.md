@@ -8,7 +8,7 @@ HTML
 CSS
 
 ## Website
-https://lernantino.github.io/run-buddy/
+https://dus0001.github.io/run-buddy/
 
 ## Contribution
 Made with  ❤️ by Daven
